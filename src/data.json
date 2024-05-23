@@ -1,0 +1,79 @@
+{
+    "type_stores": [
+        {
+            "id": 1,
+            "title": "Clothing Sigma",
+            "subtitle": "Tienda de ropa",
+            "description": "esta es la descripciones 1",
+            "detalles": [
+                {
+                    "id": 1,
+                    "text": "Detalles 123123123111 asdfasdfasdfasdfasdf asdfasdf asdfdasfasdf"
+                },
+                {
+                    "id": 2,
+                    "text": "Detalles 12"
+                },
+                {
+                    "id": 3,
+                    "text": "Detalles 13"
+                },
+                {
+                    "id": 4,
+                    "text": "Detalles 14"
+                }
+            ],
+            "plan": "esta es el plan numero 1"
+        },
+        {
+            "id": 2,
+            "title": "Clothing Beta",
+            "subtitle": "Tienda de ropa",
+            "description": "esta es la descripciones 1",
+            "detalles": [
+                {
+                    "id": 1,
+                    "text": "Detalles 11"
+                },
+                {
+                    "id": 2,
+                    "text": "Detalles 12"
+                },
+                {
+                    "id": 3,
+                    "text": "Detalles 13"
+                },
+                {
+                    "id": 4,
+                    "text": "Detalles 14"
+                }
+            ],
+            "plan": "esta es el plan numero 1"
+        },
+        {
+            "id": 3,
+            "title": "Market Store",
+            "subtitle": "Tienda de productos",
+            "description": "esta es la descripciones 1",
+            "detalles": [
+                {
+                    "id": 1,
+                    "text": "D1 232131 3123123123 1231231 31231 12312 312 13131231etalles 33123123 12312 3123 123 123123 123123123 ajofpvajdfaenka fsndfinasdfn aofoafodasfona fnasoifnaoifnasionf oiandoi1"
+                },
+                {
+                    "id": 2,
+                    "text": "Detalles123 12312312312312 31212312312 321 32"
+                },
+                {
+                    "id": 3,
+                    "text": "Detalles312312 3123 1231231 23123 1312 31231 33"
+                },
+                {
+                    "id": 4,
+                    "text": "Detalles 1231312312312312 312312312312 1312 34"
+                }
+            ],
+            "plan": "esta es el plan numero 3"
+        }
+    ]
+}
