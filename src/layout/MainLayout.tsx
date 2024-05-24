@@ -1,6 +1,7 @@
 import '../App.css'
 import { Box, IconButton, Typography, useTheme } from '@mui/material'
 import bgImage from '../assets/store-bg.png'
+import bgImageMobile from '../assets/store-bg-mobile.png'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { ReactNode, useEffect, useRef } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -31,7 +32,7 @@ function MainLayout({ children, arrow }: Props) {
                 justifyContent: 'center',
                 alignItems: 'center',
                 px: { md: 1, sx: 2 },
-                backgroundImage: `url(${bgImage})`,
+                backgroundImage: { md: `url(${bgImage})`, xs: `url(${bgImageMobile})` },
                 backgroundSize: 'cover', // Esta propiedad ajusta la imagen para cubrir todo el fondo.
             }}
         >
