@@ -38,8 +38,26 @@ function Home() {
                 >
                     BIENVENIDO
                 </Typography>
-                <Typography textAlign={'center'} variant="h1">
-                    <span style={{ color: palette.secondary.main }}>Transformamos</span> tu {text}
+                <Typography
+                    sx={{ display: { md: 'flex', sm: 'flex', xs: 'none' } }}
+                    textAlign={'center'}
+                    variant="h1"
+                >
+                    <span style={{ color: palette.secondary.main, marginRight: '8px' }}>
+                        Transformamos
+                    </span>{' '}
+                    tu {text}
+                </Typography>
+                <Typography
+                    sx={{ display: { md: 'none', sm: 'none', xs: 'flex' } }}
+                    textAlign={'center'}
+                    flexDirection={'column'}
+                    variant="h1"
+                >
+                    <span style={{ color: palette.secondary.main }}>
+                        Transformamos <br />
+                    </span>
+                    tu {text}
                 </Typography>
                 <Cursor />
                 <Typography
