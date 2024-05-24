@@ -17,7 +17,7 @@ function Muitheme({ children }: { children: ReactNode }) {
         setSelectedTheme('light')
     }, [])
     useEffect(() => {
-        document.body.style.backgroundColor = selectedTheme === 'light' ? '#F3F3F3' : '#323232'
+        document.body.style.backgroundColor = selectedTheme === 'light' ? '#000000' : '#000000'
     }, [selectedTheme])
     const activeTheme = getActiveTheme(selectedTheme)
 
