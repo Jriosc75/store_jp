@@ -1,11 +1,12 @@
 import '../App.css'
 import { Box, IconButton, Typography, useTheme } from '@mui/material'
 import bgImage from '../assets/store-bg.png'
-import bgImageMobile from '../assets/store-bg-mobile.png'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { ReactNode, useEffect, useRef } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import ZoomImage from '../components/common/ZoomImage'
+import ShadowImg from '../assets/shadowImg.png'
 
 interface Props {
     children: ReactNode
@@ -32,7 +33,7 @@ function MainLayout({ children, arrow }: Props) {
                 justifyContent: 'center',
                 alignItems: 'center',
                 px: { md: 1, sx: 2 },
-                backgroundImage: { md: `url(${bgImage})`, xs: `url(${bgImageMobile})` },
+                backgroundImage: `url(${bgImage})`,
                 backgroundSize: 'cover', // Esta propiedad ajusta la imagen para cubrir todo el fondo.
             }}
         >
@@ -91,10 +92,23 @@ function MainLayout({ children, arrow }: Props) {
                         height: { md: 'calc(100% - 80px)', xs: 'calc(100% - 80px)' },
                         width: '100%',
                         padding: 2,
+                        position: 'inherit',
                     }}
                     display={'flex'}
                     flexDirection={'column'}
                 >
+                    <Box
+                        position={'fixed'}
+                        zIndex={0}
+                        height={'auto'}
+                        left={{ md: -120, xs: -300 }}
+                        bottom={{ md: -40, xs: -280 }}
+                    >
+                        <ZoomImage className={'image-container'} src={ShadowImg} alt="fondo" />
+                    </Box>
+                    <Box position={'fixed'} height={'auto'} zIndex={0} right={-170} top={-120}>
+                        <ZoomImage className={'image-container-1'} src={ShadowImg} alt="fondo" />
+                    </Box>
                     {children}
                 </Box>
 
